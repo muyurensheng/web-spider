@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import Button from "@material-ui/core/Button/Button";
+import Dashboard from "./Dashboard/Dashboard";
 const ipc = require('electron').ipcRenderer;
 
 class App extends Component {
     render() {
         const reply = ipc.sendSync('synchronous-message', 'ping');
         return (
-            <Button variant="contained" color="primary">
-                你好，{reply}
-            </Button>
+            <Dashboard />
         )
     }
 }

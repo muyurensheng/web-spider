@@ -16,10 +16,13 @@
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "clsx": "^1.0.3",
     "electron": "^4.0.5",
     "electron-builder": "20.38.4",
     "electron-webpack": "^2.6.2",
+    "prop-types": "^15.7.2",
     "webpack": "4.28.4"
   }
 }

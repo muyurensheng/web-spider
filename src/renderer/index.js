@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./component/app";
+import App from "./component/App";
 //添加字体和icon
 (function() {
 
