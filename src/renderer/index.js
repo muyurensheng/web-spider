@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
+import App from "./component/app";
 //添加字体和icon
 (function() {
 
@@ -14,11 +14,4 @@ import Button from '@material-ui/core/Button';
     s.parentNode.insertBefore(fontLink, s);
     s.parentNode.insertBefore(iconLink, s);
 })();
-function App() {
-    return (
-        <Button variant="contained" color="primary">
-        你好，世界
-    </Button>
-);
-}
 ReactDOM.render(<App />, document.querySelector('#app'));
