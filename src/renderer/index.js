@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./component/App";
+const ipc = require('electron').ipcRenderer;
+    ipc.on("message", (event, text) => {
+        console.log(arguments);
+    });
+    ipc.on("isUpdateNow", ()=> {
+        alert("开始更新");
+    ipc.send("isUpdateNow");
+    });
+    ipc.send("checkForUpdate");
 //添加字体和icon
 (function() {
 
